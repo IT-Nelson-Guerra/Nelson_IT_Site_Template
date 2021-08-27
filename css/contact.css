@@ -1,0 +1,297 @@
+/* Import Google font - Poppins */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@700&family=Viga&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@700&family=Viga&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    padding: 0 10px;
+    min-height: 100vh;
+    background: #009fc2;
+    align-items: center;
+    justify-content: center;
+    background-color: #0d0a0b;
+    background-image: linear-gradient(315deg, #0d0a0b 0%, #009fc2 74%);
+}
+
+::selection {
+    color: #fff;
+    background: #009fc2;
+}
+
+.main-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 90px;
+}
+
+.main-content-contact {
+    height: 700px;
+    width: 800px;
+    position: absolute;
+    margin-top: 90px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.wrapper {
+    width: 700px;
+    background: #fff5d3;
+    font-family: "Lato", sans-serif;
+    letter-spacing: 3px;
+    background: rgba(255, 255, 255, 0)
+}
+
+.wrapper header {
+    font-size: 16px;
+    font-weight: 100;
+    padding: 20px 30px;
+    border-bottom: 1px solid #ccc;
+    font-family: "Lato", sans-serif;
+}
+
+.wrapper form {
+    margin: 35px 30px;
+}
+
+.wrapper form.disabled {
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+form .dbl-field {
+    display: flex;
+    margin-bottom: 25px;
+    justify-content: space-between;
+}
+
+.dbl-field .field {
+    height: 50px;
+    display: flex;
+    position: relative;
+    width: calc(100% / 2 - 13px);
+}
+
+.wrapper form i {
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    color: #ccc;
+    font-size: 17px;
+    pointer-events: none;
+    transform: translateY(-50%);
+}
+
+form .field input,
+form .message textarea {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 0 18px 0 48px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.field input::placeholder,
+.message textarea::placeholder {
+    color: #ccc;
+}
+
+.field input:focus,
+.message textarea:focus {
+    padding-left: 47px;
+    border: 2px solid #009fc2;
+}
+
+.field input:focus~i,
+.message textarea:focus~i {
+    color: #009fc2;
+}
+
+form .message {
+    position: relative;
+}
+
+form .message i {
+    top: 30px;
+    font-size: 20px;
+}
+
+form .message textarea {
+    min-height: 130px;
+    max-height: 230px;
+    max-width: 100%;
+    min-width: 100%;
+    padding: 15px 20px 0 48px;
+}
+
+form .message textarea::-webkit-scrollbar {
+    width: 0px;
+}
+
+.message textarea:focus {
+    padding-top: 14px;
+}
+
+form .button-area {
+    margin: 25px 0;
+    display: flex;
+    align-items: center;
+}
+
+.button-area button {
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 13px 25px;
+    background: #009fc2;
+    transition: background 0.3s ease;
+}
+
+.button-area button:hover {
+    background: #05303a;
+}
+
+.button-area span {
+    font-size: 17px;
+    margin-left: 30px;
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .wrapper header {
+        text-align: center;
+    }
+    .wrapper form {
+        margin: 35px 20px;
+    }
+    form .dbl-field {
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+    form .dbl-field .field {
+        width: 100%;
+        height: 45px;
+        margin-bottom: 20px;
+    }
+    form .message textarea {
+        resize: none;
+    }
+    form .button-area {
+        margin-top: 20px;
+        flex-direction: column;
+    }
+    .button-area button {
+        width: 100%;
+        padding: 11px 0;
+        font-size: 16px;
+    }
+    .button-area span {
+        margin: 20px 0 0;
+        text-align: center;
+    }
+}
+
+
+/* ----------- iPad ----------- */
+
+@media only screen and (min-device-width: 834px) and (max-device-width: 1194px) and (-webkit-min-device-pixel-ratio: 2) {
+    /* CSS Rules Here */
+    #wrapper-main {
+        width: 400px;
+        background: #fff5d3;
+        font-family: "Lato", sans-serif;
+        letter-spacing: 3px;
+        background: rgba(255, 255, 255, 0)
+    }
+    #wrapper-main header {
+        font-size: 16px;
+        font-weight: 100;
+        padding: 20px 30px;
+        border-bottom: 1px solid #ccc;
+        font-family: "Lato", sans-serif;
+    }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+    #wrapper-main {
+        width: 400px;
+        background: #fff5d3;
+        font-family: "Lato", sans-serif;
+        letter-spacing: 3px;
+        background: rgba(255, 255, 255, 0)
+    }
+    #wrapper-main header {
+        font-size: 16px;
+        font-weight: 100;
+        padding: 20px 30px;
+        border-bottom: 1px solid #ccc;
+        font-family: "Lato", sans-serif;
+    }
+}
+
+
+/* ----------- iPhone X ----------- */
+
+
+/* Portrait and Landscape */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {}
+
+
+/* Portrait */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {}
+
+
+/* Landscape */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {}
+
+
+/* ----------- iPhone 11 ----------- */
+
+
+/* 1792x828px at 326ppi */
+
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) {}
+
+
+/* 2436x1125px at 458ppi */
+
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {}
+
+
+/* 2688x1242px at 458ppi */
+
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) {}
