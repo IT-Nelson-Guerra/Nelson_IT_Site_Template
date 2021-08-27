@@ -1,2 +1,2 @@
-# Nelson_IT_Site_Template
+# Personal Projects Site
 Source code for my personal projects website.
